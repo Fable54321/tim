@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './AboutMe.module.css'
 import scrollMobile from '../images/scroll-up.png'
 
-const AboutMe = () => {
+const AboutMe = ({ handlePageChange }) => {
   return (
     <div className= {styles['AboutMe-container']}>
       <div className={styles['about-me-text']}>
@@ -16,7 +16,7 @@ const AboutMe = () => {
           <p>
             I'm currently looking for a remote job opportunity in the tech industry. If you're interested in working with me or have any questions, please don't hesitate to reach out.
           </p>
-          <img className={styles.mobileScroll} src={scrollMobile} alt='an icon telling that you can scroll'/>
+          <img onTouchEnd={handlePageChange} className={styles.mobileScroll} src={scrollMobile} alt='an icon telling that you can scroll'/>
       
           <a href="mailto:timothebissonnette@gmail.com">Contact Me</a> 
           </div>

@@ -2,16 +2,14 @@ import { animateScroll as scroll} from "react-scroll"
 
 
 const scrollTo = (direction) => {
-    const options = {
-        duration: 3500,
-      };
+   
   
   
     if (direction === "top") {
     
-    scroll.scrollToTop(options);
+    scroll.scrollToTop({duration: 1000});
   }else if (direction === "bottom"){
-    scroll.scrollToBottom(options);
+    scroll.scrollToBottom({duration: 3500});
   }else {
     throw new Error("Invalid direction");
   }

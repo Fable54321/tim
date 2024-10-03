@@ -3,7 +3,7 @@ import styles from './MyProjects.module.css'
 import scrollMobile from '../images/scroll-up.png'
 import { Link } from 'react-router-dom'
 
-const MyProjects = () => {
+const MyProjects = ({ handlePageChange }) => {
   return (
     <div className={styles["my-projects-container"]}>
       <div className={styles["my-projects-text"]}>
@@ -17,6 +17,7 @@ const MyProjects = () => {
         <p>Here is project #2</p>
         <p>here is project #3</p>
         <img
+          onTouchEnd={handlePageChange}
           className={styles.mobileScroll}
           src={scrollMobile}
           alt="an icon telling that you can scroll"

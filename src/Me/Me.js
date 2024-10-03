@@ -74,6 +74,9 @@ useEffect(() => {
   if(!isPortrait){
     setMargin(0);
   };
+  if(page !== 3){
+    scrollTo('top');
+  }
 // eslint-disable-next-line react-hooks/exhaustive-deps
 },[location.pathname]);
 
@@ -114,10 +117,10 @@ const navigate = useNavigate();
         <img src={tsim} alt="Timothé Bissonnette" />
       </div>
      <div ref={allPagesRef} onWheel={handlePageChange} className={styles['all-pages'] }>
-        {page === 1 && <AboutMe  />}
-        {page === 2 && <MyProjects />}
-        {page === 3 && <MySkills />}
-        {page === 4 && <MyHobbies />}
+        {page === 1 && <AboutMe handlePageChange={handlePageChange} />}
+        {page === 2 && <MyProjects handlePageChange={handlePageChange} />}
+        {page === 3 && <MySkills handlePageChange={handlePageChange} />}
+        {page === 4 && <MyHobbies handlePageChange={handlePageChange} />}
      </div>
      <div className={styles.scroll}> 
         

@@ -50,8 +50,11 @@ span {
 
   body {
       background-image: url('./images/background-mobile.jpg');
-      background-attachment: fixed;
-      overflow: auto;
+      background-attachment: scroll;
+      background-repeat: repeat-y;
+      
+      height: 100%;
+      overflow-y: auto;
       z-index: 1000;
   }
 

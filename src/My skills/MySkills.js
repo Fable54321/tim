@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import scrollTo from '../Functions/scrollTo'
 import { useEffect } from 'react'
 
-const MySkills = () => {
+const MySkills = ({ handlePageChange }) => {
 
 
 useEffect(()=> {
@@ -40,7 +40,7 @@ useEffect(()=> {
           <Link to={'/skills'} onClick={() => scrollTo('top')}>back to top </Link>
           <a href="mailto:timothebissonnette@gmail.com">Contact Me</a>
              <div className={styles['img-container']}> 
-              <img className={styles.mobileScroll} src={scrollMobile} alt='an icon telling that you can scroll'/>
+              <img onTouchEnd={handlePageChange} className={styles.mobileScroll} src={scrollMobile} alt='an icon telling that you can scroll'/>
              </div> 
         </div>
       </div>
