@@ -1,0 +1,99 @@
+.AboutMe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    width: 100%;
+}
+
+.AboutMe-container > * {
+    width:60%;
+    
+}
+
+.AboutMe-container a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.about-me-text {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border: white solid 1px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+    font-size: 1.4rem;
+}
+
+.mobileScroll {
+    display: none;
+}
+
+
+
+@media (orientation: portrait) {
+
+.mobileScroll {
+    display: block;
+}
+
+.AboutMe-container h1{
+    font-size: 1.9rem;
+}
+
+
+.AboutMe-container {
+    width: 85%;
+}
+
+.AboutMe-container p {
+    font-size: 1.3rem;
+}
+
+.about-me-text {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+
+.about-me-text img{
+    width: 7%;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.about-me-text a {
+    margin-left: 7%;
+}
+
+
+}
+
+@media screen and (orientation: portrait) and (min-height: 750px) {
+
+    .AboutMe-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .AboutMe-container  p{
+        font-size: 1.7rem;
+    }
+
+    .AboutMe-container a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height: 850px) {
+
+    .AboutMe-container h1 {
+        font-size: 2.6rem;
+    }
+
+    .AboutMe-container  p{
+        font-size: 1.9rem;
+    }
+}

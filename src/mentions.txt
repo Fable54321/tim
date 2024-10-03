@@ -1,0 +1,12 @@
+<a href="https://iconscout.com/icons/html" class="text-underline font-size-sm" target="_blank">Html</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+<a href="https://iconscout.com/icons/react" class="text-underline font-size-sm" target="_blank">React</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/react" class="text-underline font-size-sm" target="_blank">React</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/javascript" class="text-underline font-size-sm" target="_blank">javascript</a> by <a href="https://iconscout.com/contributors/maninderkaur" class="text-underline font-size-sm" target="_blank">maninderkaur</a>
+<a href="https://iconscout.com/icons/redux" class="text-underline font-size-sm" target="_blank">Redux</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm" target="_blank">Icon 54</a>
+
+
+Photo by <a href="https://unsplash.com/@nkachanovskyyy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nikita Kachanovsky</a> on <a href="https://unsplash.com/photos/a-desk-with-a-computer-monitor-and-keyboard-on-it-OVbeSXRk_9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+
+
