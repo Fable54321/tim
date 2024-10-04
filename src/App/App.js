@@ -17,6 +17,7 @@ const router = createBrowserRouter(
       <Route path='/projects' element= {<MyProjects />} />
       <Route path='/skills' element = {<MySkills />} />
       <Route path='/hobbies' element= {<MyHobbies />} />
+
     </Route>  
   )
 )

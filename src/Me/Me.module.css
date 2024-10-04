@@ -87,10 +87,9 @@
     flex-direction: column;
     margin-left: 0;
     justify-content: center;
-    
   }
 
-  .pictureBox img{
+  .picture img{
     width: 70%;
     padding-left: 0;
   }
@@ -101,7 +100,9 @@
     
   }
 
-  
+  .tooltiptext {
+    display: none;
+  }
 
   #desktopScroll {
     display: none;

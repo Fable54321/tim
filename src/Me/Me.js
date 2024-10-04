@@ -18,7 +18,7 @@ const Me = ({ page, setPage }) => {
   const allPagesRef = useRef(null); // Create a ref for the element
   //
   const [gap, setGap] = useState(0); // the gap property is used by pictureBox class and gets set depending on the height of the all-pages class.
-  const [margin, setMargin] = useState('-15%');
+  const [margin, setMargin] = useState('-15%'); // top margin of the picture box class changes depending on the page.
   //
   const [canScroll, setCanScroll] = useState(true); /* in order for the user to not change th page too many times unadvertedly, scrolls gets turned
    to false and gets turned back to true on a timer.*/
@@ -68,15 +68,14 @@ useEffect(() => {
     scrollTo('bottom');
   }else if(location.pathname === '/hobbies'){
     setPage(4)
+    scrollTo('top');
     setMargin('-15%');
   }
 
   if(!isPortrait){
     setMargin(0);
   };
-  if(page !== 3){
-    scrollTo('top');
-  }
+  
 // eslint-disable-next-line react-hooks/exhaustive-deps
 },[location.pathname]);
 

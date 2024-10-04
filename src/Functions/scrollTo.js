@@ -6,8 +6,7 @@ const scrollTo = (direction) => {
   
   
     if (direction === "top") {
-    
-    scroll.scrollToTop({duration: 1000});
+    scroll.scrollToTop({duration: 1600});
   }else if (direction === "bottom"){
     scroll.scrollToBottom({duration: 3500});
   }else {
