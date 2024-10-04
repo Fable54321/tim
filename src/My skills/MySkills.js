@@ -13,9 +13,9 @@ import { useEffect } from 'react'
 const MySkills = ({ handlePageChange }) => {
 
 
-useEffect(()=> {
+/*useEffect(()=> {
   scrollTo('bottom')
-},[])
+},[])*/
 
   return (
     <div className={styles['my-skills-container']}>

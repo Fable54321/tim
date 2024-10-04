@@ -26,10 +26,12 @@ const Me = ({ page, setPage }) => {
   //
   let location = useLocation(); //used for changing page depending on the url, but also for my sideEffects to kcik everytime it changes
 
+  const windowHeight = window.innerHeight;
+
   useEffect(() => {
     if (allPagesRef.current) {
       const height = window.getComputedStyle(allPagesRef.current).getPropertyValue('height');
-      const windowHeight = window.innerHeight;
+      
       const heightValue = Math.floor(Number(height.slice(0,6)));
       console.log(heightValue, windowHeight);
 
@@ -41,7 +43,8 @@ const Me = ({ page, setPage }) => {
       adjustSize() ? setGap('7%') : setGap(0);
       
     }
-  }, [location.pathname]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname, page]); //used for dynamically adjusting gap value depending on containers height
 
 // Pages Logic ******************************************************** 
   
@@ -64,11 +67,16 @@ useEffect(() => {
   }else if(location.pathname === '/skills'){
     setPage(3)
     
-    setMargin('55%');
-    scrollTo('bottom');
+    if (windowHeight < 700) {
+      setMargin('55%');
+      scrollTo('bottom');
+    } else {
+      setMargin('-15%');
+    }
+    
   }else if(location.pathname === '/hobbies'){
-    setPage(4)
     scrollTo('top');
+    setPage(4)
     setMargin('-15%');
   }
 
@@ -96,6 +104,7 @@ const navigate = useNavigate();
       setCanScroll(false);
       navigate(pages[1]); // navigate back to the first page on the last page
     }
+    
 
 
     setTimeout(() => {
