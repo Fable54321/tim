@@ -59,9 +59,30 @@
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
 
+    .my-hobbies-container {
+        margin-top: 40%;
+    }
+
     .my-hobbies-container > * {
         width:85%;
     }
 
+}
+
+@media screen and (max-height: 380px) and (orientation: landscape) {
+
+
+    .my-hobbies-container {
+        margin-top: 40%;
+    }
+    .my-hobbies-container-inner p{
+        font-size: 1.2rem;
+    }
+
+    .my-hobbies-container-inner h1 {
+        font-size: 1.9rem;
+    }
+
+   
 }
 

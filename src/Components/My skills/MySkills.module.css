@@ -107,9 +107,25 @@
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
 
+
+    .my-skills-container {
+        margin-top: 50%;
+    }
+
     .my-skills-container > * {
         width:85%;
     }
+
+}
+
+@media screen and (max-height: 380px) and (orientation: landscape) {
+
+
+    .my-skills-container {
+        margin-top: 80%;
+    }
+
+   
 
 }
 

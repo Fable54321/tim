@@ -63,7 +63,7 @@ useEffect(() => {
   if(location.pathname === '/about'){
     scrollTo('top');
     setPage(1)
-    setMargin('-15%');
+    setMargin('-15');
   }else if(location.pathname === '/projects'){
     setPage(2)
     setMargin('-15%');

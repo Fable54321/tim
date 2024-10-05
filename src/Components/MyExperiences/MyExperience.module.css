@@ -64,6 +64,24 @@
 
     .experiences-container > * {
         width:85%;
+        margin-top: 30%;
     }
 
+    .experiences-container h1 {
+        font-size: 1.9rem;
+    }
+
+    .experiences-container p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-height: 380px) and (orientation: landscape) {
+
+
+    .experiences-container {
+        margin-top: 40%;
+    }
+
+   
 }
