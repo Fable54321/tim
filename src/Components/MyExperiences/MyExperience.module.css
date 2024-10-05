@@ -64,7 +64,7 @@
 
     .experiences-container > * {
         width:85%;
-        margin-top: 30%;
+       
     }
 
     .experiences-container h1 {
@@ -78,10 +78,10 @@
 
 @media screen and (max-height: 380px) and (orientation: landscape) {
 
-
     .experiences-container {
-        margin-top: 40%;
+        margin-top: 32%;
     }
+    
 
    
 }

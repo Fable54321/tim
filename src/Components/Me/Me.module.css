@@ -125,6 +125,10 @@
 
 @media screen and (max-height : 450px) and (orientation: landscape) {
   
+  .pictureBox {
+    margin-top: 10%;
+  }
+
   .picture {
     width: 33%;
   }

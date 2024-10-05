@@ -192,3 +192,20 @@
    }
 
 }
+
+@media screen and (max-height: 380px) and (orientation: landscape) {
+
+    
+
+    .nav-full {
+     width: 119%;
+     
+    }
+
+    .subjects {
+        padding-right: 2%;
+
+        width: 90%;
+        align-items: center;
+    }
+}

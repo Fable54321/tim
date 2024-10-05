@@ -70,7 +70,7 @@ useEffect(() => {
   } else if(location.pathname === '/skills'){
     setPage(3);
     
-    if (windowHeight < 700 && windowHeight > 450) {
+    if (windowHeight < 700 && isPortrait) {
       setMargin('55%');
       scrollTo('bottom');
     } else {
@@ -84,17 +84,18 @@ useEffect(() => {
   } else if(location.pathname === '/experience'){
     setPage(5);
 
-    if (windowHeight < 700 && windowHeight > 450) {
+    if(windowHeight < 700 && isPortrait) {
       setMargin('55%');
-      scrollTo('bottom');
-    } else {
+      scrollTo('bottom')
+    }
+     else {
       setMargin('-15%');
     }
     
   }
 
   if(!isPortrait){
-    setMargin(0);
+    setMargin('');
   }
 // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [location.pathname, windowHeight, isPortrait]); 
