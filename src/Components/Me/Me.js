@@ -57,18 +57,18 @@ const Me = ({ page, setPage }) => {
     5: '/experience',
   }
 
-useEffect(() => {
-  
 
+
+useEffect(() => {
   if(location.pathname === '/about'){
     scrollTo('top');
-    setPage(1)
-    setMargin('-15');
-  }else if(location.pathname === '/projects'){
-    setPage(2)
+    setPage(1);
     setMargin('-15%');
-  }else if(location.pathname === '/skills'){
-    setPage(3)
+  } else if(location.pathname === '/projects'){
+    setPage(2);
+    setMargin('-15%');
+  } else if(location.pathname === '/skills'){
+    setPage(3);
     
     if (windowHeight < 700 && windowHeight > 450) {
       setMargin('55%');
@@ -77,12 +77,12 @@ useEffect(() => {
       setMargin('-15%');
     }
     
-  }else if(location.pathname === '/hobbies'){
+  } else if(location.pathname === '/hobbies'){
     scrollTo('top');
-    setPage(4)
+    setPage(4);
     setMargin('-15%');
-  }else if(location.pathname === '/experience'){
-    setPage(5)
+  } else if(location.pathname === '/experience'){
+    setPage(5);
 
     if (windowHeight < 700 && windowHeight > 450) {
       setMargin('55%');
@@ -95,10 +95,11 @@ useEffect(() => {
 
   if(!isPortrait){
     setMargin(0);
-  };
-  
+  }
 // eslint-disable-next-line react-hooks/exhaustive-deps
-},[location.pathname]);
+}, [location.pathname, windowHeight, isPortrait]); 
+
+
 
 const navigate = useNavigate();
 
