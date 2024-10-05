@@ -169,3 +169,26 @@
 
    
 }
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+
+    
+
+   .nav-full {
+    width: 107%;
+    
+   }
+
+   .name {
+    margin-left : 0;
+    text-align: left;
+    padding-left: 1%;
+    width: 35%;
+   }
+
+   .subjects { 
+    
+    width: 50%;
+   }
+
+}

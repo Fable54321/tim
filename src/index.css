@@ -56,4 +56,14 @@ code {
 
 }
 
+@media screen and (max-height: 450px) and (orientation: landscape) {
+
+    
+
+  body{
+    overflow-y: auto;
+  }
+
+}
+
 

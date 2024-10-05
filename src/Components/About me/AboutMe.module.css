@@ -100,8 +100,18 @@
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
 
+    
+
     .AboutMe-container > * {
         width:85%;
+    }
+
+    .AboutMe-container h1 {
+        font-size: 1.9rem;
+    }
+
+    .AboutMe-container p {
+        font-size: 1.2rem;
     }
 
 }
