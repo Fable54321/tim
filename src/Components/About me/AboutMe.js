@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './AboutMe.module.css'
-import scrollMobile from '../images/scroll-up.png'
+import scrollMobile from '../../../src/images/scroll-up.png'
 
 const AboutMe = ({ handlePageChange }) => {
   return (
@@ -19,7 +19,7 @@ const AboutMe = ({ handlePageChange }) => {
           <img onTouchEnd={handlePageChange} className={styles.mobileScroll} src={scrollMobile} alt='an icon telling that you can scroll'/>
       
           <a href="mailto:timothebissonnette@gmail.com">Contact Me</a> 
-          </div>
+        </div>
     </div>
     
   )

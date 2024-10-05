@@ -16,6 +16,15 @@
     border: white solid 1px;
 }
 
+.my-skills-container p {
+    font-size: 1.15rem;
+}
+
+.my-skills-container a {
+    color: yellow;
+    text-decoration: underline;
+}
+
 .title{
     border-bottom: 0;
 }
@@ -36,8 +45,21 @@
     border-top: 0;
 }
 
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top { 
+    display: none;
+}
+
+
 .mobileScroll {
     display: none;
+    
 }
 
 @media screen and (orientation: portrait) {

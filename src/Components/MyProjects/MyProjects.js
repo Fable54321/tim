@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './MyProjects.module.css'
-import scrollMobile from '../images/scroll-up.png'
+import scrollMobile from '../../../src/images/scroll-up.png'
 import { Link } from 'react-router-dom'
 
 const MyProjects = ({ handlePageChange }) => {

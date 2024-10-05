@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './MyHobbies.module.css'
-import scrollMobile from '../images/scroll-up.png'
+import scrollMobile from '../../../src/images/scroll-up.png'
 
 const MyHobbies = ({ handlePageChange }) => {
   return (

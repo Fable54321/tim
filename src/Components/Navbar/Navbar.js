@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 import { Link } from 'react-router-dom'
-import dropdown from '../images/dropdown.png'
-import close from '../images/close.png'
+import dropdown from '../../../src/images/dropdown.png'
+import close from '../../../src/images/close.png'
 
 
 
@@ -45,7 +45,7 @@ const Navbar = ({ setPage }) => {
         <Link id={2} to='/projects' onClick={(e)=> handleLinkClick(e.target.id)} >My projects</Link>
         <Link id={3} to='/skills' onClick={(e)=> handleLinkClick(e.target.id)}>Skills</Link>
         <Link id={4} to={'/hobbies'} onClick={(e)=> handleLinkClick(e.target.id)}>My hobbies</Link>
-        <Link id={5}>Experience</Link>
+        <Link id={5} to={'/experience'} onClick={(e) => handleLinkClick(e.target.id)}>Experience</Link>
         </div>
       </div>
       <div className={styles.subjects}>
@@ -53,7 +53,7 @@ const Navbar = ({ setPage }) => {
         <Link to={'/projects'} onClick={()=> setPage(2)}>My projects</Link>
         <Link to={'/skills'} onClick={()=> setPage(3)}>Skills</Link>
         <Link to={'/hobbies'} onClick={()=> setPage(4)} >My hobbies</Link>
-        <Link>Experience</Link>
+        <Link to={'/experience'} onClick={()=> setPage(5)}>Experience</Link>
       </div>
     </div>
   )

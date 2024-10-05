@@ -1,21 +1,19 @@
 
 import styles from './MySkills.module.css'
-import reactLogo from '../images/react.png'
-import html from '../images/html.png'
-import css from '../images/css.png'
-import javascript from '../images/javascript.png'
-import redux from '../images/redux.png'
-import scrollMobile from '../images/scroll-up.png'
+import reactLogo from '../../../src/images/react.png'
+import html from '../../../src/images/html.png'
+import css from '../../../src/images/css.png'
+import javascript from '../../../src/images/javascript.png'
+import redux from '../../../src/images/redux.png'
+import scrollMobile from '../../../src/images/scroll-up.png'
 import { Link } from 'react-router-dom'
-import scrollTo from '../Functions/scrollTo'
-import { useEffect } from 'react'
+import scrollTo from '../../../src/Functions/scrollTo'
+
 
 const MySkills = ({ handlePageChange }) => {
 
 
-/*useEffect(()=> {
-  scrollTo('bottom')
-},[])*/
+
 
   return (
     <div className={styles['my-skills-container']}>
@@ -37,8 +35,8 @@ const MySkills = ({ handlePageChange }) => {
         <p>I also understand and can use redux, although I haven't had the chance to work on as many projects using it.</p>
         <p>I am consistently looking for new things to learn, so right now as I am interested in back-end development as well I have started to learn PHP</p>
         <div className={styles.footer}>
-          <Link to={'/skills'} onClick={() => scrollTo('top')}>back to top </Link>
-          <a href="mailto:timothebissonnette@gmail.com">Contact Me</a>
+          <Link className={styles.top} to={'/skills'} onClick={() => scrollTo('top')}>back to top </Link>
+          <Link to={"mailto:timothebissonnette@gmail.com"}>Contact Me</Link>
              <div className={styles['img-container']}> 
               <img onTouchEnd={handlePageChange} className={styles.mobileScroll} src={scrollMobile} alt='an icon telling that you can scroll'/>
              </div> 

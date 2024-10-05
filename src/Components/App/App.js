@@ -7,6 +7,7 @@ import AboutMe from '../About me/AboutMe';
 import MyProjects from '../MyProjects/MyProjects';
 import MySkills from '../My skills/MySkills';
 import MyHobbies from '../MyHobbies/MyHobbies';
+import MyExperiences from '../MyExperiences/MyExperiences';
 
 
 const router = createBrowserRouter(
@@ -17,7 +18,7 @@ const router = createBrowserRouter(
       <Route path='/projects' element= {<MyProjects />} />
       <Route path='/skills' element = {<MySkills />} />
       <Route path='/hobbies' element= {<MyHobbies />} />
-
+      <Route path='/experience' element= {<MyExperiences />} />
     </Route>  
   )
 )

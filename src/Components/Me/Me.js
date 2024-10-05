@@ -1,14 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import styles from './Me.module.css'
-import tsim from '../images/tsim.jpg'
+import tsim from '../../../src/images/tsim.jpg'
 import AboutMe from '../About me/AboutMe'
 import MyProjects from '../MyProjects/MyProjects'
 import { useLocation, useNavigate } from 'react-router-dom'
-import scrollDesktop from '../images/scrolling-mouse.png'
+import scrollDesktop from '../../../src/images/scrolling-mouse.png'
 import MySkills from '../My skills/MySkills'
 import MyHobbies from '../MyHobbies/MyHobbies'
-import scrollTo from '../Functions/scrollTo'
+import scrollTo from '../../../src/Functions/scrollTo'
+import MyExperiences from '../MyExperiences/MyExperiences'
 
 
 
@@ -53,12 +54,14 @@ const Me = ({ page, setPage }) => {
     2: '/projects',
     3: '/skills',
     4: '/hobbies',
+    5: '/experience',
   }
 
 useEffect(() => {
   
 
   if(location.pathname === '/about'){
+    scrollTo('top');
     setPage(1)
     setMargin('-15%');
   }else if(location.pathname === '/projects'){
@@ -78,6 +81,16 @@ useEffect(() => {
     scrollTo('top');
     setPage(4)
     setMargin('-15%');
+  }else if(location.pathname === '/experience'){
+    setPage(5)
+
+    if (windowHeight < 700) {
+      setMargin('55%');
+      scrollTo('bottom');
+    } else {
+      setMargin('-15%');
+    }
+    
   }
 
   if(!isPortrait){
@@ -95,7 +108,7 @@ const navigate = useNavigate();
 /************************************** */
  const handlePageChange = () => {
   if (canScroll) {
-    if (page < 4) {
+    if (page < 5) {
       setPage(page + 1);
       setCanScroll(false);
       navigate(pages[page + 1]); // navigate to the next page
@@ -129,6 +142,7 @@ const navigate = useNavigate();
         {page === 2 && <MyProjects handlePageChange={handlePageChange} />}
         {page === 3 && <MySkills handlePageChange={handlePageChange} />}
         {page === 4 && <MyHobbies handlePageChange={handlePageChange} />}
+        {page === 5 && <MyExperiences handlePageChange={handlePageChange} />}
      </div>
      <div className={styles.scroll}> 
         
