@@ -97,3 +97,11 @@
         font-size: 1.9rem;
     }
 }
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+
+    .AboutMe-container > * {
+        width:85%;
+    }
+
+}

@@ -70,8 +70,8 @@
   border-radius: 30px;
 }
 
-
-
+/*mobile general settings */
+/**************************/
 @media (orientation: portrait){
 
   .all-pages {
@@ -111,11 +111,42 @@
   
 }
 
+/*mobile smaller devices*/
+
 @media screen and (max-height : 820px) and (orientation: portrait) {
   .picture {
     
     padding-bottom: 1.6%;
     
   }
+}
 
+/*mobile landscape*/
+
+@media screen and (max-height : 450px) and (orientation: landscape) {
+  
+  .picture {
+    width: 33%;
+  }
+  
+  .scroll {
+    display: flex;
+    justify-content: end;
+    width: 8%;
+    margin-left: 0;
+  }
+
+  .scroll img {
+    width: 100%;
+   
+  }
+
+  .all-pages {
+    width: 80%;
+  }
+
+  .tooltiptext {
+    display: none;
+  }
+    
 }

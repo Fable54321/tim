@@ -57,3 +57,11 @@
     }
 }
 
+@media screen and (max-height: 450px) and (orientation: landscape) {
+
+    .my-hobbies-container > * {
+        width:85%;
+    }
+
+}
+

@@ -70,7 +70,7 @@ useEffect(() => {
   }else if(location.pathname === '/skills'){
     setPage(3)
     
-    if (windowHeight < 700) {
+    if (windowHeight < 700 && windowHeight > 450) {
       setMargin('55%');
       scrollTo('bottom');
     } else {
@@ -84,7 +84,7 @@ useEffect(() => {
   }else if(location.pathname === '/experience'){
     setPage(5)
 
-    if (windowHeight < 700) {
+    if (windowHeight < 700 && windowHeight > 450) {
       setMargin('55%');
       scrollTo('bottom');
     } else {

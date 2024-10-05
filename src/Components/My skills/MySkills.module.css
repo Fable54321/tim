@@ -105,4 +105,12 @@
 
 }
 
+@media screen and (max-height: 450px) and (orientation: landscape) {
+
+    .my-skills-container > * {
+        width:85%;
+    }
+
+}
+
 
