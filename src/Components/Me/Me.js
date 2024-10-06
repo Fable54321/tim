@@ -18,9 +18,7 @@ const Me = ({ page, setPage }) => {
 
   const allPagesRef = useRef(null); // Create a ref for the element
   //
-  const [gap, setGap] = useState(0); // the gap property is used by pictureBox class and gets set depending on the height of the all-pages class.
-   // top margin of the picture box class changes depending on the page.
-  //
+ 
   const [canScroll, setCanScroll] = useState(true); /* in order for the user to not change th page too many times unadvertedly, scrolls gets turned
    to false and gets turned back to true on a timer.*/
   //
@@ -114,7 +112,7 @@ const navigate = useNavigate();
   return (
     <>
 
-    <div className={styles.pictureBox} style={{'gap': gap}}>
+    <div className={styles.pictureBox}>
       <div className={styles.picture} >
         <img src={tsim} alt="Timothé Bissonnette" />
       </div>
