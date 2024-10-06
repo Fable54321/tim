@@ -1,4 +1,4 @@
-import { animateScroll as scroll} from "react-scroll"
+import { animateScroll as scroll } from "react-scroll";
 
 
 const scrollTo = (direction) => {
@@ -6,7 +6,7 @@ const scrollTo = (direction) => {
   
   
     if (direction === "top") {
-    scroll.scrollToTop({duration: 1550, smooth: true});
+    scroll.scrollTo(-100, {duration: 1550, smooth: true});
   }else if (direction === "bottom"){
     scroll.scrollToBottom({duration: 3500});
   }else {

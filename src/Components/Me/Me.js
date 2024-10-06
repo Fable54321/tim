@@ -29,22 +29,6 @@ const Me = ({ page, setPage }) => {
 
   const windowHeight = window.innerHeight;
 
-  useEffect(() => {
-    if (allPagesRef.current) {
-      const height = window.getComputedStyle(allPagesRef.current).getPropertyValue('height');
-      
-      const heightValue = Math.floor(Number(height.slice(0,6)));
-      console.log(heightValue, windowHeight);
-
-      const adjustSize = () =>{
-        return windowHeight > 820 && heightValue < 300;
-      } 
-
-      adjustSize() ? setGap('7%') : setGap(null);      
-
-      }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location.pathname, page]); //used for dynamically adjusting gap value depending on containers height
 
 // Pages Logic ******************************************************** 
 

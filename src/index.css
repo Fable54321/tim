@@ -19,8 +19,8 @@ body {
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
   width: 100%;
+  overflow-x: hidden;
 }
 
   #root {
