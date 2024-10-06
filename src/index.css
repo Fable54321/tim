@@ -65,7 +65,6 @@ code {
   body{
     overflow-y: auto;
     width: 100%;
-    overscroll-behavior-y:none;
   }
 
 }
