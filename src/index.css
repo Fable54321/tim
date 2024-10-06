@@ -50,8 +50,12 @@ code {
       background-repeat: repeat-y;
       
       height: 100%;
-      overflow-y: auto;
+     
       z-index: 1000;
+  }
+
+  #root { 
+    overflow-y: auto;
   }
 
 }
