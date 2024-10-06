@@ -55,7 +55,7 @@ code {
   }
 
   #root { 
-    overflow-y: auto;
+    
   }
 
 }
@@ -67,7 +67,6 @@ code {
   } 
 
   body{
-    overflow-y: auto;
     width: 100%;
   }
 
