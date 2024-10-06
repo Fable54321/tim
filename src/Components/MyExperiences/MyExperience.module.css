@@ -31,6 +31,20 @@
     display: none;
 }
 
+
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+
+    .experiences-container{
+        width: 105%;
+        
+    }
+
+    .experiences-container > * {
+      width: 92%;
+    }
+  }
+
+
 @media  screen and (orientation: portrait) {
     .experiences-container{
         width: 100%;

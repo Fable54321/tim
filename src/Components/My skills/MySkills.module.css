@@ -62,6 +62,20 @@
     
 }
 
+
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+
+    .my-skills-container{
+        width: 100%;
+        
+    }
+
+    .my-skills-container > * {
+      width: 92%;
+    }
+  }
+
+
 @media screen and (orientation: portrait) {
     .my-skills-container {
         height: fit-content;

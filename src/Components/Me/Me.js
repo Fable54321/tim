@@ -19,7 +19,7 @@ const Me = ({ page, setPage }) => {
   const allPagesRef = useRef(null); // Create a ref for the element
   //
   const [gap, setGap] = useState(0); // the gap property is used by pictureBox class and gets set depending on the height of the all-pages class.
-  const [margin, setMargin] = useState('-15%'); // top margin of the picture box class changes depending on the page.
+   // top margin of the picture box class changes depending on the page.
   //
   const [canScroll, setCanScroll] = useState(true); /* in order for the user to not change th page too many times unadvertedly, scrolls gets turned
    to false and gets turned back to true on a timer.*/
@@ -39,15 +39,16 @@ const Me = ({ page, setPage }) => {
       const adjustSize = () =>{
         return windowHeight > 820 && heightValue < 300;
       } 
-     
-      
-      adjustSize() ? setGap('7%') : setGap(0);
-      
-    }
+
+      adjustSize() ? setGap('7%') : setGap(null);      
+
+      }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname, page]); //used for dynamically adjusting gap value depending on containers height
 
 // Pages Logic ******************************************************** 
+
+
   
   const pages = {
     1: '/about',
@@ -63,40 +64,34 @@ useEffect(() => {
   if(location.pathname === '/about'){
     scrollTo('top');
     setPage(1);
-    setMargin('-15%');
+    
   } else if(location.pathname === '/projects'){
     setPage(2);
-    setMargin('-15%');
+    
   } else if(location.pathname === '/skills'){
     setPage(3);
     
-    if (windowHeight < 700 && isPortrait) {
-      setMargin('55%');
+    if (windowHeight < 840 && isPortrait) {
+      
       scrollTo('bottom');
-    } else {
-      setMargin('-15%');
-    }
+    } 
     
   } else if(location.pathname === '/hobbies'){
     scrollTo('top');
     setPage(4);
-    setMargin('-15%');
+   
   } else if(location.pathname === '/experience'){
     setPage(5);
 
-    if(windowHeight < 700 && isPortrait) {
-      setMargin('55%');
+    if(windowHeight < 840 && isPortrait) {
+      
       scrollTo('bottom')
     }
-     else {
-      setMargin('-15%');
-    }
+     
     
   }
 
-  if(!isPortrait){
-    setMargin('');
-  }
+  
 // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [location.pathname, windowHeight, isPortrait]); 
 
@@ -136,7 +131,7 @@ const navigate = useNavigate();
     <>
 
     <div className={styles.pictureBox} style={{'gap': gap}}>
-      <div className={styles.picture} style={{'marginTop': margin}}>
+      <div className={styles.picture} >
         <img src={tsim} alt="Timothé Bissonnette" />
       </div>
      <div ref={allPagesRef} onWheel={handlePageChange} className={styles['all-pages'] }>

@@ -23,10 +23,12 @@
 
 .subjects {
     display: flex;
-    width: 30%;
-    justify-content: space-around;
+    width: 47%;
+    justify-content: right;
     margin-top: 1.5%;
     margin-right: 1%;
+    font-size: 1.2rem;
+    gap: 3%;
 }
 
 .subjects-mobile{

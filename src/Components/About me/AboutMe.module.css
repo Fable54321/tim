@@ -4,7 +4,7 @@
     align-items: center;
     
     
-    width: 100%;
+    
 }
 
 .AboutMe-container > * {
@@ -31,6 +31,18 @@
     display: none;
 }
 
+
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+
+    .AboutMe-container{
+        width: 100%;
+        
+    }
+
+    .AboutMe-container > * {
+      width: 92%;
+    }
+  }
 
 
 @media (orientation: portrait) {
@@ -116,11 +128,3 @@
 
 }
 
-@media screen and (max-height: 380px) and (orientation: landscape) {
-
-
-    
-
-   
-
-}

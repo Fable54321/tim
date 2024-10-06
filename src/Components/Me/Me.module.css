@@ -1,3 +1,8 @@
+:root {
+  --dynaminc-gap: 10%;
+}
+
+
 .pictureBox{
   display: flex;
   width: 100%;
@@ -27,6 +32,7 @@
   justify-content: start;
   margin-left: -8%;
   position: relative;
+  width: 20%;
 }
 
 .scroll:hover .tooltiptext{
@@ -35,7 +41,7 @@
 
 .scroll img {
   background-color: rgba(255, 255, 255, 0.8);
-  width:15%;
+  width: 45px;
   padding: 0 1% 0 1%;
   border-radius: 10px;
   border: white solid 2px;
@@ -72,7 +78,65 @@
 
 /*mobile general settings */
 /**************************/
-@media (orientation: portrait){
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+  .pictureBox {
+    margin-left: 0%;
+    justify-content: center;
+    gap: 8%;
+    zoom: 90%;
+    margin-top: 3%;
+  }
+
+  .picture {
+    width: 33%;
+  }
+
+  .all-pages {
+    width: 40%;
+    
+  }
+
+  .scroll {
+    width:5%;
+    margin-left: 0%;
+  }
+
+}
+
+@media screen and (min-width:700px) and (orientation: portrait) {
+  .pictureBox{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .picture {
+    width: 50%;
+  }
+
+  .all-pages {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-top: 10%;
+  }
+
+  #desktopScroll {
+    display: none;
+  }
+
+ 
+}
+
+
+@media screen and (max-width:699px) and (orientation: portrait){
+
+  .picture {
+    padding-bottom: 10px;
+  }
 
   .all-pages {
     display: flex;
@@ -87,6 +151,8 @@
     flex-direction: column;
     margin-left: 0;
     justify-content: center;
+    margin-top: 5%;
+    
   }
 
   .picture img{
@@ -126,6 +192,7 @@
 @media screen and (max-height : 450px) and (orientation: landscape) {
   
   .pictureBox {
+    min-width: 100%;
     margin-top: 10%;
   }
 

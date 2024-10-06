@@ -29,6 +29,20 @@
     font-size: 2.6rem;
 }
 
+
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+
+    .my-hobbies-container{
+        width: 100%;
+        
+    }
+
+    .my-hobbies-container > * {
+      width: 92%;
+    }
+  }
+
+
 @media screen and (orientation: portrait) {
     .my-hobbies-container-inner {
         width: 80%;

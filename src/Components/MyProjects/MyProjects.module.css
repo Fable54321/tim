@@ -58,6 +58,20 @@
     display: none;
 }
 
+
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+
+    .my-projects-container{
+        width: 100%;
+        
+    }
+
+    .my-projects-container > * {
+      width: 92%;
+    }
+  }
+
+
 @media (orientation: portrait) {
 
     .mobileScroll {
