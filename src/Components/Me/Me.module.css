@@ -64,8 +64,8 @@
   visibility: hidden;
   color: black;
   position: absolute;
-  left:13%;
-  bottom: 54%;
+  right:55%;
+  bottom: 84%;
   background-color: rgb(189, 180, 180);
   height: 35px;
   display: flex;
@@ -73,7 +73,8 @@
   font-size:0.8rem;
   z-index: 6;
   width: 50%;
-  border-radius: 30px;
+  padding: 5% 0 4% 0;
+  border-radius: 12px;
 }
 
 /*mobile general settings */
@@ -143,7 +144,7 @@
     justify-content: center;
     height: auto;
     margin-top: 1%;
-    overflow-y: auto;
+    
   }
 
   .pictureBox{
@@ -153,7 +154,7 @@
     margin-left: 0;
     justify-content: center;
     margin-top: 5%;
-    
+    overflow-y: auto;
   }
 
   .picture img{

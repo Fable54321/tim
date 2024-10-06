@@ -46,7 +46,7 @@ code {
 
   body {
       background-image: url('./images/background-mobile.jpg');
-      background-attachment: scroll;
+      background-attachment: fixed;
       background-repeat: repeat-y;
       
       height: 100%;
