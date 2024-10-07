@@ -51,8 +51,8 @@ code {
       background-image: url('./images/background-mobile.jpg');
       
       background-repeat: repeat-y;
-      background-size: 110%;
-      background-position: 50% 50%;
+      background-size: 120%;
+      background-position: 70% 50%;
       height: webkit-fill-available;
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
