@@ -42,6 +42,7 @@ code {
 
   html{
     font-size: 70%;
+    overflow-y: scroll;
   }
 
   body {
