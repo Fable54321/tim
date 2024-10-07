@@ -51,6 +51,7 @@ code {
       background-image: url('./images/background-mobile.jpg');
       background-attachment: fixed;
       background-repeat: repeat-y;
+      background-size: webkit-fill-available;
       height: webkit-fill-available;
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
