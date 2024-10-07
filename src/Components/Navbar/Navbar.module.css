@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(0,0,0,0.3);
-    border-bottom:1px solid white;
+    border-bottom:1px solid #04ADBF;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,6 +19,7 @@
     width: 30%;
     margin-left: 1.5%;
     text-align: right;
+    text-shadow: 5px -3px 5px #04ADBF;
 }
 
 .subjects {
