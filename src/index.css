@@ -48,8 +48,8 @@ code {
       background-image: url('./images/background-mobile.jpg');
       background-attachment: fixed;
       background-repeat: repeat-y;
-      position: fixed;
-      height: 100%;
+      /*position: fixed;*/
+      /*height: 100%;*/
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
   }
