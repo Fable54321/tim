@@ -43,7 +43,7 @@ code {
   html{
     font-size: 70%;
     overflow-y: scroll;
-    height: -webkit-fill-available;
+    
     
   }
 
@@ -53,7 +53,7 @@ code {
       background-repeat: repeat-y;
       background-size: 120%;
       background-position: 70% 50%;
-      height: webkit-fill-available;
+      
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
   }
