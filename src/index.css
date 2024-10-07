@@ -49,7 +49,7 @@ code {
 
   body {
       background-image: url('./images/background-mobile.jpg');
-      
+      background-attachment: scroll;
       background-repeat: repeat-y;
       background-size: 120%;
       background-position: 70% 50%;
