@@ -43,14 +43,15 @@ code {
   html{
     font-size: 70%;
     overflow-y: scroll;
+    height: -webkit-fill-available;
+    
   }
 
   body {
       background-image: url('./images/background-mobile.jpg');
       background-attachment: fixed;
       background-repeat: repeat-y;
-      /*position: fixed;*/
-      height: 100%;
+      height: webkit-fill-available;
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
   }
