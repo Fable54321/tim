@@ -1,6 +1,3 @@
-:root {
-  --dynaminc-gap: 10%;
-}
 
 
 .pictureBox{
@@ -9,6 +6,7 @@
   height: 89.162vh;
   align-items: center;
   margin-left: 6%;
+  
 }
 
 .picture img{
@@ -22,7 +20,7 @@
 }
 
 .all-pages {
-  
+  margin-left: -5%;
   width: 100%;
   height: fit-content;
 }

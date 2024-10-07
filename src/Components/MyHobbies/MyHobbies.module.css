@@ -54,15 +54,17 @@
     }
 
     .my-hobbies-container-inner img {
-        width: 7% !important;
+        width: 11% !important;
         background-color: rgba(255,255,255,0.7);
     }
-  .mobileScroll {
+ .mobileScroll {
     display: block;
     float: right;
     margin-right: -2.4%;
     
   }  
+
+  
 }
 
 @media screen and (min-height: 820px) and (orientation: portrait) {

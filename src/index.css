@@ -66,10 +66,12 @@ code {
 
   html {
     width: 100%;
+    overflow-y: scroll;
   } 
 
   body{
     width: 100%;
+    
   }
 
 }
