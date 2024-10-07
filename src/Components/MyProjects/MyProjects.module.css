@@ -8,10 +8,15 @@
 
 .my-projects-container p {
     margin: 4% 0 4% 0;
+    
+}
+
+.my-projects-container h1 {
+    font-size: 2.1rem;
 }
 
 .my-projects-container > * {
-    width:60%;
+    width:55%;
 }
 
 .my-projects-container a {
@@ -26,7 +31,7 @@
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 3%;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     height: fit-content;
 }
 

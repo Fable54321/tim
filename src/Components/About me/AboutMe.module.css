@@ -7,12 +7,17 @@
     
 }
 
+.about-me-text h1 {
+    text-align: center;
+    font-size: 2.1rem;
+}
+
 .AboutMe-container > * {
-    width:60%;
+    width:55%;
     
 }
 
-.AboutMe-container a {
+.about-me-text a {
     color: yellow;
     text-decoration: underline;
 }
@@ -24,7 +29,12 @@
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 3%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    
+}
+
+.about-me-text p {
+    text-align: justify;
 }
 
 .mobileScroll {

@@ -13,16 +13,22 @@
 
 .experiences-inner{
     background-color: rgba(0,0,0,0.7);
-    width: 60%;
+    width: 55%;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 3%;
     border: white solid 1px;
     color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.experiences-inner h1 {
+    text-align: center;
 }
 
 .experiences-inner p{
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     
 }
 

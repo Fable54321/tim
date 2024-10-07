@@ -31,9 +31,9 @@ const MySkills = ({ handlePageChange }) => {
         <p>So far in my learning journey, I have gotten comfortable working with a few tools already.</p>
         <p>The main ones so far have been javascript, wich made me fall in love with programming.</p>
         <p>HTML and CSS wich I've learned to use hand in hand to make websites look awesome but also intuitive.</p>
-        <p>I have learned react, but also and mainly experienced with it a lot as as soon as I've started using it, it's been behind almost every of my project.</p>
+        <p>I have learned react, it is the one I feel the most comfortable with.</p>
         <p>I also understand and can use redux, although I haven't had the chance to work on as many projects using it.</p>
-        <p>I am consistently looking for new things to learn, so right now as I am interested in back-end development as well I have started to learn PHP</p>
+        <p>I am consistently looking for new things to learn, so right now I am learning phaser.js for in browser game development.</p>
         <div className={styles.footer}>
           <Link className={styles.top} to={'/skills'} onClick={() => scrollTo('top')}>back to top </Link>
           <Link to={"mailto:timothebissonnette@gmail.com"}>Contact Me</Link>

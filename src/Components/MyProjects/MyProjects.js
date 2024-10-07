@@ -14,8 +14,8 @@ const MyProjects = ({ handlePageChange }) => {
           </Link>
           <p>(Work in progress, waiting for some pictures.)</p>
         </div>
-        <p>Here is project #2</p>
-        <p>here is project #3</p>
+        <p>More projects are coming soon.</p>
+        <p>More projects are coming soon.</p>
         <img
           onTouchEnd={handlePageChange}
           className={styles.mobileScroll}
