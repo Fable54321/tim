@@ -52,6 +52,7 @@ code {
       
       background-repeat: repeat-y;
       background-size: 110%;
+      background-position: 50% 50%;
       height: webkit-fill-available;
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
