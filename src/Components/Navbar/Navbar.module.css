@@ -78,7 +78,7 @@
         text-align: center;
         justify-content: center;
         margin: 1% 0;
-        
+        text-shadow: 0px -4px 5px #04ADBF, 0px -5px 5px #04ADBF;
     }
     
     .name-extended {

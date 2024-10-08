@@ -76,6 +76,13 @@
 }
 
 /*mobile general settings */
+@media screen and (orientation: portrait) {
+  .all-pages {
+    margin-left: 0;
+  }
+
+}
+
 /**************************/
 @media screen and (min-width: 820px) and (max-width: 1150px) {
   .pictureBox {
