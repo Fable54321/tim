@@ -79,6 +79,7 @@
 @media screen and (orientation: portrait) {
   .all-pages {
     margin-left: 0;
+    overflow-y: scroll;
   }
 
 }
